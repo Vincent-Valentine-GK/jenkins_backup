@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'cd /var/jenkins_home/'
+                sh 'pwd'
                 
                 }
 
