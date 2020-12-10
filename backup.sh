@@ -1,0 +1,19 @@
+#!/bin/bash
+# Jenkins Configuraitons Directory
+cd "/var/snap/docker/common/var-lib-docker/volumes/jenkins_home/_data"
+# Add general configurations, job configurations, and user content
+git add -- *.xml jobs/*/*.xml userContent/* ansible/*
+# only add user configurations if they exist
+if [ -d users ]; then
+    user_configs=`ls users/*/config.xml`
+if [ -n "$user_configs" ]; then
+        git add $user_configs
+fi
+fi
+# mark as deleted anything that's been, well, deleted
+to_remove=`git status | grep "deleted" | awk '{print $3}'`
+if [ -n "$to_remove" ]; then
+    git rm --ignore-unmatch $to_remove
+fi
+git commit -m "Automated Jenkins commit"
+git push -q -u origin master
