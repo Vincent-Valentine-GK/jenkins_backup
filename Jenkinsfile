@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 sh 'pwd'
-                cd '/var/jenkins_home/'
+                sh 'cd /var/jenkins_home/'
                 
                 }
 
@@ -16,7 +16,6 @@ pipeline {
 
             steps {
                 sh 'echo "This is a test."'
-
             }
         }
 
