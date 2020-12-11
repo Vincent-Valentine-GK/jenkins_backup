@@ -6,12 +6,9 @@ pipeline {
 
             steps {
                 sh 'pwd'
-                
+                sh 'sh backup.sh'
             }
         
-            dir("/var/jenkins_home/"){
-              sh 'pwd'
-            }
         }
 
         stage ('Testing Stage') {
