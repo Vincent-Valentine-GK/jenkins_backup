@@ -4,6 +4,8 @@ whoami
 echo "We are HEREEEEEEEEEEEEEE!"
 pwd
 cd "/var/jenkins_home/"
+git init
+git remote add origin git@gitlab.com:DrunkinMastaRay_Orchestration/jenkins_backup.git
 pwd 
 ls -la | grep TEST
 ls -la | grep git
