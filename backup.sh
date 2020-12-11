@@ -6,6 +6,7 @@ pwd
 cd "/var/jenkins_home/"
 pwd 
 ls -la | grep TEST
+ls -la | grep git
 echo "Before git!!!!!!!!!!!!!!!!!!"
 # Add general configurations, job configurations, and user content
 git add -- *.xml jobs/*/*.xml userContent/* ansible/*
