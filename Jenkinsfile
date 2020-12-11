@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    dir("/var/jenkins_home/"){
+      sh 'pwd'
+    }
+
     stages {
         stage ('Configure Diretory Stage') {
 
