@@ -1,9 +1,9 @@
 #!/bin/bash
 # Jenkins Configuraitons Directory
+whoami
 echo "We are HEREEEEEEEEEEEEEE!"
 pwd
 cd "/var/jenkins_home/"
-ls -la
 pwd 
 echo "Before git!!!!!!!!!!!!!!!!!!"
 # Add general configurations, job configurations, and user content
