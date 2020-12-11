@@ -3,6 +3,8 @@
 echo "We are HEREEEEEEEEEEEEEE!"
 pwd
 cd "/var/jenkins_home/"
+pwd 
+echo "Before git!!!!!!!!!!!!!!!!!!"
 # Add general configurations, job configurations, and user content
 git add -- *.xml jobs/*/*.xml userContent/* ansible/*
 # only add user configurations if they exist
