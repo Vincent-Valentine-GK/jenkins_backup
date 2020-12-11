@@ -1,6 +1,6 @@
 #!/bin/bash
 # Jenkins Configuraitons Directory
-cd "/var/snap/docker/common/var-lib-docker/volumes/jenkins_home/_data"
+cd "/var/jenkins_home/"
 # Add general configurations, job configurations, and user content
 git add -- *.xml jobs/*/*.xml userContent/* ansible/*
 # only add user configurations if they exist
