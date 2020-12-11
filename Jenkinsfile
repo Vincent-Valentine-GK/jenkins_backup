@@ -6,11 +6,11 @@ pipeline {
 
             steps {
                 sh 'pwd'
-                cd '/var/jenkins_home/'
-                sh 'pwd'
                 
-                }
-
+            }
+            dir("/var/jenkins_home/"){
+              sh 'pwd'
+            }
         }
 
         stage ('Testing Stage') {
