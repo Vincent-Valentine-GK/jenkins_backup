@@ -1,6 +1,7 @@
 #!/bin/bash
 # Jenkins Configuraitons Directory
 echo "We are HEREEEEEEEEEEEEEE!"
+pwd
 cd "/var/jenkins_home/"
 # Add general configurations, job configurations, and user content
 git add -- *.xml jobs/*/*.xml userContent/* ansible/*
